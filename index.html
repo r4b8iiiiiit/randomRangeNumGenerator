@@ -1,0 +1,21 @@
+<html>
+    <body>
+        <h1>Generate Random Number from a Minium and Maximum Range</h1>
+        <form>
+            <label>Minimum Number:</label>
+            <input type="number" id="minNum">
+            <label>Maximum Number:</label>
+            <input type="number" id="maxNum">
+            <button type="button" onclick="getValues();">
+        </form>
+        <script>
+            function getValues() {
+            //document.getElementById("minNum").innerHTML = minNum3;
+            let minNumField = parseInt(document.getElementById("minNum").value);
+            let maxNumField = parseInt(document.getElementById("maxNum").value);
+            let randomNumResult = Math.floor(Math.random() * (maxNumField - minNumField)) + minNumField;
+            alert(randomNumResult);
+            }
+        </script>
+    </body>
+</html>
